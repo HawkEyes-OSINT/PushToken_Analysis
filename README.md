@@ -22,9 +22,11 @@ You can use it to quickly check what type of push token you have (Apple, Android
 ## Screenshots
 
 **Main Window:**
+
 ![Main Window](screenshots/screenshot_1.png)
 
 **After Analyzing a Token:**
+
 ![Analysis Example](screenshots/screenshot_2.png)
 
 ---
