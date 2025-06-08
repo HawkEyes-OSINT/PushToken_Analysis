@@ -4,8 +4,8 @@
 
 ## What is Push Token Analyzer?
 
-**Push Token Analyzer** is a simple desktop tool by [HawkEyes OSINT](https://hawk-eyes.io) that helps you identify and understand mobile push notification tokens.  
-You can use it to quickly check what type of push token you have (Apple, Android, etc.) and get details about it—no technical knowledge required.
+**Push Token Analyzer** is a simple tool by [HawkEyes OSINT](https://hawk-eyes.io) that helps you identify and understand mobile push notification tokens.
+You can use it to quickly check what type of push token you have (Apple, Android, etc.) and get details about it.
 
 ---
 
@@ -21,34 +21,77 @@ You can use it to quickly check what type of push token you have (Apple, Android
 
 ## Screenshots
 
-**Main Window:**  
+**Main Window:**
 ![Main Window](screenshots/screenshot_1.png)
 
-**After Analyzing a Token:**  
+**After Analyzing a Token:**
 ![Analysis Example](screenshots/screenshot_2.png)
 
 ---
 
-## How to Install
+## How to Install and Run
 
-### **Option 1: Download the Ready-to-Use App (Recommended)**
+### Step 1: Install Python
 
-1. Go to the [Releases](https://github.com/HawkEyes-OSINT/PushToken_Analysis/releases/tag/v1.0) page on GitHub.
-2. Download the file for your system:
-   - **Windows:** `PushTokenAnalyzer.exe`
-   - **Mac:** `PushTokenAnalyzer` (may need to allow in Security settings)
-   - **Linux:** `PushTokenAnalyzer`
-3. Save the file and the `2.png` logo in the same folder.
-4. Double-click the app to start.
+If you don't have Python installed, follow these steps:
 
-> **Note:** On Mac, you may need to right-click the app and choose "Open" the first time, then confirm you want to run it.
+1.  Go to the [Python Downloads page](https://www.python.org/downloads/).
+2.  Download the installer for your operating system.
+3.  Run the installer and follow the instructions.
+    -   **Important:** Make sure to check the box that says "Add Python to PATH" during installation.
+
+### Step 2: Download the Tool
+
+1.  Download all the files from this repository.
+2.  Extract the files to a folder on your computer.
+
+### Step 3: Install Dependencies
+
+1.  Open a terminal or command prompt.
+    -   **Windows:** Press `Win + R`, type `cmd`, and press Enter.
+    -   **macOS:** Open "Terminal" from the Applications/Utilities folder.
+    -   **Linux:** Open your preferred terminal application.
+2.  Navigate to the folder where you extracted the files using the `cd` command.
+    -   For example: `cd /path/to/the/folder`
+3.  Run the following command to install the required library:
+    ```
+    pip install pillow
+    ```
+
+### Step 4: Run the Tool
+
+1.  In the same terminal or command prompt, run the following command:
+    ```
+    python push_token_gui.py
+    ```
 
 ---
 
-### **Option 2: Run from Source (If You Have Python Installed)**
+## Support
 
-1. [Download Python](https://www.python.org/downloads/) if you don't have it.
-2. Download or clone this repository.
-3. Open a terminal (Command Prompt, Terminal, or PowerShell).
-4. Install the required library:# PushToken_Analysis
-Get information from a push token
+-   **Website:** [hawk-eyes.io](https://hawk-eyes.io)
+-   **Email:** [customer_service@hawk-eyes.io](mailto:customer_service@hawk-eyes.io)
+
+---
+
+## FAQ
+
+**Q: What is a push token?**
+A: It’s a unique code used by mobile apps to send notifications to your device.
+
+**Q: Is my data sent anywhere?**
+A: No. All analysis happens on your computer. Nothing is uploaded or shared.
+
+**Q: I get an error when running the script.**
+A: Make sure you have installed Python and the required library (`pillow`).
+
+---
+
+## License
+
+This tool is provided by HawkEyes OSINT.
+See [LICENSE](LICENSE) for details.
+
+---
+
+**If you need more help, contact us at [customer_service@hawk-eyes.io](mailto:customer_service@hawk-eyes.io).**
