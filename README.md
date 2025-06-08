@@ -33,7 +33,7 @@ You can use it to quickly check what type of push token you have (Apple, Android
 
 ### **Option 1: Download the Ready-to-Use App (Recommended)**
 
-1. Go to the [Releases](https://github.com/yourusername/yourrepo/releases) page on GitHub.
+1. Go to the [Releases](https://github.com/HawkEyes-OSINT/PushToken_Analysis/releases/tag/v1.0) page on GitHub.
 2. Download the file for your system:
    - **Windows:** `PushTokenAnalyzer.exe`
    - **Mac:** `PushTokenAnalyzer` (may need to allow in Security settings)
